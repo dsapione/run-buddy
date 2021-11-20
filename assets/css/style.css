@@ -4,8 +4,6 @@
 	box-sizing: border-box;
 }
 
-/* apply styles to <body> */
-
 body {
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
@@ -81,11 +79,11 @@ section {
 /* Hero Style End */
 
 .hero-form {
+	border: 3px solid #024e76;
 	background-color: #fce138;
 	padding: 20px;
 	width: 500px;
 	color: #024e76;
-	border: solid 3px #024e76;
 	position: absolute;
   bottom: 120px;
   right: 140px;
@@ -140,23 +138,6 @@ section {
 	background: #fce138;
 }
 
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
 .steps div {
   margin-bottom: 80px;
 }
@@ -176,7 +157,23 @@ section {
   color: #39a6b2;
   font-size: 23px;
 }
-
 .steps span {
   font-size: 38px;
+}
+
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
 }
