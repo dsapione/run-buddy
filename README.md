@@ -11,6 +11,6 @@ A website that offers fitness training services.
 https://dsapione.github.io/run-buddy/
 
 ## Contribution
-Made with ❤️ by [your name]
+Made with ❤️ by Dan Sapione
 
 ### ©️2019 Run Buddy, Inc 
