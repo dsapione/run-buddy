@@ -8,7 +8,7 @@ body {
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* apply styles to <header> */
+/* HEADER / NAV BAR STYLES START */
 header {
 	padding: 20px 35px;
 	background-color: #39a6b2;
@@ -41,11 +41,13 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 0 30px;
   font-weight: lighter;
-  font-size: 1.5vw;
+  font-size: 1.55vw;
 }
-/* apply styles to <footer> */
+/* HEADER / NAVBAR STYLES END */
+
+/* FOOTER STYLES START */
 footer {
 	background: #fce138;
 	width: 100%;
@@ -69,12 +71,14 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* HERO STYLE START */
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
@@ -82,8 +86,8 @@ section {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	align-items: flex-start;
 }
-/* Hero Style End */
 
 .hero-form {
 	border: 3px solid #024e76;
@@ -131,7 +135,7 @@ section {
 	margin: 3.5%;
 	color: #fff;
 	font-size: 18px;
-	line-height: 1.3;
+	line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -141,6 +145,7 @@ section {
 }
 /* HERO STYLES END */
 
+/* WHAT WE DO STYLES START */
 .intro p {
 	line-height: 1.7;
   color: #39a6b2;
@@ -149,7 +154,9 @@ section {
 	margin: 0 auto;
 	text-align: center;
 }
+/* WHAT WE DO STYLES END */
 
+/* WHAT YOU DO STYLES START */
 .steps {
 	background: #fce138;
 }
@@ -201,9 +208,11 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+/* WHAT YOU DO STYLES END */
 
+/* SECTION TITLE STYLES START */
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
@@ -220,7 +229,9 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
+/* SECTION TITLE STYLES END */
 
+/* MEET THE TRAINERS START */
 .trainers {
 	width: 100%;
 	margin: 0 auto;
@@ -258,7 +269,9 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
+/* MEET THE TRAINER STYLES END */
 
+/* UTILITIES START*/
 .text-left {
   text-align: left;
 }
@@ -270,6 +283,7 @@ section {
 .flex-row {
 	display: flex;
 }
+/* UTILITIES END */
 
 /* REACH OUT STYLES START */
 .contact {
@@ -335,5 +349,112 @@ section {
 	padding: 15px 0;
 	font-size: 16px;
 }
-
 /* REACH OUT STYLES END */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+	.hero-cta, .hero-form {
+		width: 100%;
+	}
+	
+	.hero-cta {
+		text-align: center;
+	}
+
+	.section-title {
+		width: 80%;
+	}
+	
+	.trainer {
+		flex: 0 70%;
+	}
+	
+	.contact-info iframe{
+		flex: 1 100%;
+	}
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+	  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+	
+	.contact-form {
+		order: 3;
+	}
+}
